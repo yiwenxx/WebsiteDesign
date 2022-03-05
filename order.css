@@ -1,0 +1,665 @@
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+header {
+    z-index: 100;
+    background-color: white;
+    border-bottom: 1.5vh solid #e6cbec;
+    font-family: 'Red Hat Display', sans-serif;
+    box-shadow: 0 5px 10px -5px #000000;
+}
+
+.flexbox1 {
+    display: flex;
+    padding: 0 5vw !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    font-size: 2.3vw;
+    margin-right: 5vw;
+    color: #d4a6df;
+    font-weight: bold;
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: #d4a6df;
+    opacity: 0.5;
+}
+
+
+.item {
+    font-size: 1.8vw;
+    font-weight: bold;
+    color: black !important;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+.underline {
+    color: black !important;
+}
+
+.item a:hover {
+    text-decoration: underline wavy #ddb9e6 0.35vw !important;
+    text-underline-offset: 0.2em;
+    color: #d4a6df !important;
+}
+
+.contact {
+    white-space: nowrap;
+}
+
+.contact a {
+    color: #d4a6df;
+    font-size: 3vw;
+    margin: 0.5vw;
+}
+
+.contact a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        font-size: 2.5vw;
+        color: #d4a6df;
+        font-weight: bold;
+    }
+
+    .item {
+        font-size: 2vw;
+        font-weight: bold;
+        color: black;
+    }
+
+    .contact a {
+        color: #d4a6df;
+        font-size: 3.3vw;
+        margin: 0.5vw;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 60%;
+    }
+
+    .navbar-nav {
+        display: flex;
+        width: 150%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .contact {
+        position: absolute;
+        top: 2vh;
+        left: 73%;
+    }
+
+    .logo {
+        font-size: 4vw;
+    }
+
+    .item {
+        font-size: 3vw;
+    }
+
+    .underline {
+        text-decoration-thickness: 0.7vw;
+    }
+
+    .item a:hover {
+        text-decoration: underline wavy #ddb9e6 0.55vw !important;
+
+    }
+
+    .contact a {
+        font-size: 3.5vw;
+    }
+}
+
+/*content follow here*/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 43vw;
+    position: relative;
+}
+
+.pattern svg {
+    display: block;
+    fill: #e6cbec;
+}
+
+.slogan h1 {
+    text-align: left;
+    font-family: 'Red Hat Display', sans-serif;
+    margin-left: 15%;
+    font-size: 4vw;
+    margin-top: -2vw;
+    padding-top: 0;
+}
+
+#fav {
+    color: #d4a6df;
+    font-family: 'Caveat', cursive;
+    font-size: 4vw;
+    margin-top: 0.5vw;
+}
+
+.circle {
+    position: absolute;
+    bottom: 0%;
+    right: 12%;
+    height: 30vw;
+    width: 30vw;
+    background-color: #ffffff;
+    background-image: url(order.png);
+    background-size: cover;
+    border-radius: 50%;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #d4a6df;
+}
+
+.button1 {
+    margin-left: 15%;
+    margin-top: 3.5vw;
+}
+
+.slogan button {
+    display: block;
+    padding: 1vw 3vw;
+    margin: 0;
+    background-color: #ffffff;
+    border: 0.3vw solid #feedab;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    font-size: 1.5vw;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.slogan button:hover {
+    background-color: #feedab;
+    border: 0.3vw solid #feedab;
+}
+
+/*here is the delivery*/
+.ddd {
+    padding: 5% 0;
+}
+
+.ddd h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 4.5vw;
+    margin: 4% 0;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    flex-wrap: wrap;
+}
+
+.delicon {
+    font-size: 4.5vw;
+    color: #d4a6df;
+}
+
+.delicon h4 {
+    font-size: 1.5vw;
+
+}
+
+.dot {
+    height: 1.5vw;
+    width: 1.5vw;
+    background-color: #fcdd61;
+    border-radius: 50%;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.dot2 {
+    height: 1vw;
+    width: 1vw;
+    background-color: #feedab;
+    border-radius: 50%;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+/*here is the order form*/
+.order {
+    background-image: linear-gradient(white, #f8f0fa);
+}
+
+.orderform {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60vh;
+    
+}
+
+.form1 {
+    grid-row:1/2;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    padding:0 2.5% 0 0;
+ 
+}
+
+.form2 {
+    grid-row:1/2;
+    grid-column: 2/3;
+    display: flex;
+    align-items: flex-start;
+    padding:0 0 0 2.5%;
+}
+
+.order h2 {
+    margin-top: 5%;
+    margin-bottom: -1%;
+    font-family: 'Caveat', cursive;
+    font-size: 4.5vw;
+
+}
+
+.order .info {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 25px;
+    margin: 5px 0 0 0;
+
+}
+
+input,
+select {
+    font-family: 'Red Hat Display', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(110, 108, 108);
+    text-align: left;
+    padding-left: 5px;
+    height:4vh;
+    margin-bottom: 3vh;
+}
+
+input {
+    padding-left: 10px;
+}
+
+textarea {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    text-align: left;
+    letter-spacing: 1.5px;
+    height:20vh;
+}
+
+.button2 {
+    padding: 1.2vh 3vw;
+    background-color: white;
+    border: 0.5vh solid #e6cbec;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Red Hat Display', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: -1%;
+}
+
+
+.button2:hover {
+    background-color: #e6cbec;
+}
+
+.empty {
+    height: 10vh;
+}
+
+
+footer {
+    background-color: black;
+    border-top: solid #e6cbec 1vh;
+    height: 5vh;
+}
+
+footer p {
+    color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 47vw;
+
+    }
+
+    .slogan h1 {
+        margin-left: 12.5%;
+        font-size: 5vw;
+        margin-top: 0;
+    }
+
+    #fav {
+        font-size: 5vw;
+        margin-top: 0.5vw;
+    }
+
+    .circle {
+        position: absolute;
+        bottom: 0%;
+        right: 10%;
+        height: 32.5vw;
+        width: 32.5vw;
+        background-color: #ffffff;
+        background-image: url(order.png);
+        background-size: cover;
+        border-radius: 50%;
+        border-style: dashed;
+        border-width: 2px;
+        border-color: #d4a6df;
+    }
+
+    .button1 {
+        margin-left: 12.5%;
+        margin-top: 4vw;
+    }
+
+    .slogan button {
+        padding: 1vw 3vw;
+        margin: 0;
+        background-color: #ffffff;
+        border: 0.35vw solid #feedab;
+        border-radius: 15px;
+        text-decoration: none;
+        font-weight: 300;
+        color: #000000;
+        text-align: center;
+        font-size: 2vw;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    .slogan button:hover {
+        background-color: #feedab;
+        border: 0.35vw solid #feedab;
+    }
+
+    .ddd h2 {
+        font-family: 'Caveat', cursive;
+        font-size: 5.5vw;
+        margin: 4% 0;
+    }
+
+    .delivery {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .delicon {
+        font-size: 5vw;
+        color: #d4a6df;
+        width: 15%;
+    }
+
+    .dot {
+        height: 1.7vw;
+        width: 1.7vw;
+        
+    }
+    
+    .dot2 {
+        height: 1.2vw;
+        width: 1.2vw;
+     
+    }
+
+    .order h2{
+        font-size: 5.5vw;
+    }
+
+    .delicon h4 {
+        font-size: 2vw;
+    }
+
+ .order .info {       
+        width: 75%;  
+    }
+    
+    .button2 {
+        font-size: 16px;
+        margin-top: 3%;
+    }
+    input,
+    select {
+        font-family: 'Red Hat Display', sans-serif;
+        letter-spacing: 1.5px;
+        font-size: 15px;
+        padding: 5px;
+        margin-bottom: 0;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgb(110, 108, 108);
+        text-align: left;
+        padding-left: 5px;
+        height:3.5vh;
+        margin-bottom: 2.65vh;
+    }
+    
+    .orderform {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50vh;
+        
+    }
+    
+    textarea {
+
+        height:18vh;
+    }  
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+    .slogan h1 {
+        margin-left: 12.5%;
+        font-size: 5.5vw;
+        margin-top: 3vw;
+    }
+
+    #fav {
+        font-size: 5.5vw;
+        margin-top: 0.5vw;
+    }
+
+    .circle {
+        position: absolute;
+        bottom: 0%;
+        right: 8%;
+        height: 35vw;
+        width: 35vw;
+        background-color: #ffffff;
+        background-image: url(order.png);
+        background-size: cover;
+        border-radius: 50%;
+        border-style: dashed;
+        border-width: 2px;
+        border-color: #d4a6df;
+    }
+
+    .button1 {
+        margin-left: 12.5%;
+        margin-top: 4vw;
+    }
+
+    .slogan button {
+        padding: 1vw 3vw;
+        margin: 0;
+        background-color: #ffffff;
+        border: 0.4vw solid #feedab;
+        font-size: 2.4vw;
+   
+    }
+
+    .slogan button:hover {
+        background-color: #feedab;
+        border: 0.4vw solid #feedab;
+    }
+
+
+main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vw;
+
+}
+
+.ddd h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 6.2vw;
+    margin: 5% 0 0 0;
+}
+
+.order h2{
+    font-size: 6.2vw;
+}
+
+
+.delivery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 9vw;
+    padding-right: 9vw;
+}
+
+.delicon {
+    font-size: 6vw;
+    color: #d4a6df;
+width:40%;
+margin: 4% 0;
+}
+
+.delicon h4 {
+    font-size: 3vw;
+}
+
+.no{
+    display: none;
+}
+
+.dot {
+    height: 2.3vw;
+    width: 2.3vw;
+   
+}
+
+.dot2 {
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+    .orderform {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 46.5vh auto ;
+    }
+
+
+    .form1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+       margin:0;
+       padding:0;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+
+    
+    }
+
+    .form2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin:0;
+        padding:0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order .info {
+        width: 60%;
+    }
+
+    .button2 {
+          margin-top:5px;
+        border: 3px solid #e6cbec;
+        font-size: 17px;
+    }
+
+}
